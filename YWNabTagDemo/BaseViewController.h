@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YWDetailsTabController.h"
 #import "Segement.h"
 @interface BaseViewController : UIViewController
 - (void)setSegmentView:(YWSegementStyle)segementStyle YWSegementIndicateStyle:(YWSegementIndicateStyle)segementIndicateStyle  isShowSelectView:(BOOL)isShowSelectView;

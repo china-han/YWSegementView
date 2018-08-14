@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import "YWDetailViewController.h"
 @interface BaseViewController ()
 
 @end
@@ -24,7 +24,7 @@
     NSMutableArray *titleArr = [NSMutableArray array];
     NSArray *titles = @[@"精选",@"2018世界杯",@"明日之子",@"电影",@"电视剧",@"NBA",@"花样年华"];
     for (int i = 0; i < 7; i++) {
-        YWDetailsTabController *tabVC = [YWDetailsTabController new];
+        YWDetailViewController *tabVC = [YWDetailViewController new];
         tabVC.title = titles[i];
         [mutArr addObject:tabVC];
         

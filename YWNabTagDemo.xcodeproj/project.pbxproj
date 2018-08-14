@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C21C28221227A9B002352C5 /* YWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C21C28121227A9B002352C5 /* YWDetailViewController.m */; };
 		5C4AB2252121523A00B2FE0F /* SegmentTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2242121523A00B2FE0F /* SegmentTitleModel.m */; };
 		5C4AB244212180FD00B2FE0F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB243212180FD00B2FE0F /* BaseViewController.m */; };
 		5C4AB2472121811000B2FE0F /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2462121811000B2FE0F /* OneViewController.m */; };
@@ -16,7 +17,6 @@
 		5C4AB2532121813300B2FE0F /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2522121813300B2FE0F /* FiveViewController.m */; };
 		5C4AB2562121813A00B2FE0F /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2552121813A00B2FE0F /* SixViewController.m */; };
 		5C5538C12108445300C890BE /* YWSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5538C02108445300C890BE /* YWSegmentView.m */; };
-		5C5538C52108524200C890BE /* YWDetailsTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5538C42108524200C890BE /* YWDetailsTabController.m */; };
 		5CA54395210978E200167B46 /* YWSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA54394210978E200167B46 /* YWSelectViewController.m */; };
 		5CA543982109B40700167B46 /* YWSelectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA543972109B40700167B46 /* YWSelectCollectionViewCell.m */; };
 		5CA5439E2109C58B00167B46 /* HYDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA5439D2109C58A00167B46 /* HYDragCellCollectionView.m */; };
@@ -29,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C21C28021227A9B002352C5 /* YWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWDetailViewController.h; sourceTree = "<group>"; };
+		5C21C28121227A9B002352C5 /* YWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWDetailViewController.m; sourceTree = "<group>"; };
 		5C4AB2232121523A00B2FE0F /* SegmentTitleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentTitleModel.h; sourceTree = "<group>"; };
 		5C4AB2242121523A00B2FE0F /* SegmentTitleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentTitleModel.m; sourceTree = "<group>"; };
 		5C4AB22F21217D3C00B2FE0F /* Segement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segement.h; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		5C5538BF2108445300C890BE /* YWSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWSegmentView.h; sourceTree = "<group>"; };
 		5C5538C02108445300C890BE /* YWSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWSegmentView.m; sourceTree = "<group>"; };
 		5C5538C2210844AD00C890BE /* YWSegmentViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWSegmentViewHeader.h; sourceTree = "<group>"; };
-		5C5538C32108524200C890BE /* YWDetailsTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWDetailsTabController.h; sourceTree = "<group>"; };
-		5C5538C42108524200C890BE /* YWDetailsTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWDetailsTabController.m; sourceTree = "<group>"; };
 		5CA54393210978E200167B46 /* YWSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWSelectViewController.h; sourceTree = "<group>"; };
 		5CA54394210978E200167B46 /* YWSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWSelectViewController.m; sourceTree = "<group>"; };
 		5CA543962109B40700167B46 /* YWSelectCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YWSelectCollectionViewCell.h; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 				5C4AB2522121813300B2FE0F /* FiveViewController.m */,
 				5C4AB2542121813A00B2FE0F /* SixViewController.h */,
 				5C4AB2552121813A00B2FE0F /* SixViewController.m */,
-				5C5538C32108524200C890BE /* YWDetailsTabController.h */,
-				5C5538C42108524200C890BE /* YWDetailsTabController.m */,
+				5C21C28021227A9B002352C5 /* YWDetailViewController.h */,
+				5C21C28121227A9B002352C5 /* YWDetailViewController.m */,
 				5CFCD4DA2105D8E1001B39F7 /* Main.storyboard */,
 				5CFCD4DD2105D8EB001B39F7 /* Assets.xcassets */,
 				5CFCD4DF2105D8EB001B39F7 /* LaunchScreen.storyboard */,
@@ -230,7 +230,7 @@
 				5CA5439E2109C58B00167B46 /* HYDragCellCollectionView.m in Sources */,
 				5CFCD4E42105D8EB001B39F7 /* main.m in Sources */,
 				5C4AB2502121812500B2FE0F /* FourViewController.m in Sources */,
-				5C5538C52108524200C890BE /* YWDetailsTabController.m in Sources */,
+				5C21C28221227A9B002352C5 /* YWDetailViewController.m in Sources */,
 				5CFCD4D62105D8E1001B39F7 /* AppDelegate.m in Sources */,
 				5C4AB2252121523A00B2FE0F /* SegmentTitleModel.m in Sources */,
 				5CA543982109B40700167B46 /* YWSelectCollectionViewCell.m in Sources */,

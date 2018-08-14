@@ -169,13 +169,6 @@ static CGFloat Font_Selected_size = 0;
             CGSize titleSize = [title sizeWithAttributes:@{NSFontAttributeName: YW_Font_Selected}];
             button.frame = CGRectMake(item_x, 0, _buttonSpace *2 + titleSize.width , YW_SegmentViewHeight);
             [button setTag:i];
-            if (i != _titleArr.count - 1) {
-                UIView *spaceLine = [[UIView alloc] init];
-                spaceLine.frame = CGRectMake(CGRectGetMaxX(button.frame), 6, YW_Space_W, YW_SegmentViewHeight - 12);
-                spaceLine.backgroundColor = [UIColor groupTableViewBackgroundColor];
-                [_segmentTitleView addSubview:spaceLine];
-            }
-            
             [button setTitle:title forState:UIControlStateNormal];
             button.titleLabel.font = YW_Font_Default;
             [button setTitleColor:YW_NormalColor forState:UIControlStateNormal];
@@ -183,6 +176,13 @@ static CGFloat Font_Selected_size = 0;
             [button addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
             [_segmentTitleView addSubview:button];
             [mutBtnArr addObject:button];
+            
+            if (i != _titleArr.count - 1) {
+                UIView *spaceLine = [[UIView alloc] init];
+                spaceLine.frame = CGRectMake(CGRectGetMaxX(button.frame), 6, YW_Space_W, YW_SegmentViewHeight - 12);
+                spaceLine.backgroundColor = [UIColor groupTableViewBackgroundColor];
+                [_segmentTitleView addSubview:spaceLine];
+            }
             
             item_x = CGRectGetMaxX(button.frame) + YW_Space_W;
         }
@@ -204,13 +204,6 @@ static CGFloat Font_Selected_size = 0;
         _selectedButton = button;
         [self scrollIndicateView];
         [self scrollSegementView];
-    }
-    if (_yw_resultBlock) {
-        _yw_resultBlock(_selectedButton.tag);
-        
-    }
-    if (self.delegate && [self.delegate respondsToSelector:@selector(segmentView:didSelectTitleBtn:)]) {
-        [self.delegate segmentView:self didSelectTitleBtn:_selectedButton.tag];
     }
 }
 
@@ -400,6 +393,13 @@ static CGFloat Font_Selected_size = 0;
     if (scrollView == self.segmentContentView) {
         NSUInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
         self.yw_defaultSelectIndex = index;
+        if (_yw_resultBlock) {
+            _yw_resultBlock(_selectedButton.tag);
+            
+        }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(segmentView:didSelectTitleBtn:)]) {
+            [self.delegate segmentView:self didSelectTitleBtn:_selectedButton.tag];
+        }
         UIViewController *vc = self.viewControllersArr[index];
         self.isClickBtn = NO;
         if (vc.view.superview) return;
@@ -418,7 +418,7 @@ static CGFloat Font_Selected_size = 0;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+{    self.isClickBtn = NO;
     _currentOffSet = scrollView.contentOffset.x;
 }
 
@@ -523,9 +523,6 @@ static CGFloat Font_Selected_size = 0;
     for (UIButton *titleBtn in self.BtnArr) {
         [titleBtn setTitleColor:yw_titleSelectedColor forState:UIControlStateSelected];
     }
-    if (!_yw_defaultSelectIndex) {
-        [self didClickButton:self.BtnArr.firstObject];
-    }
 }
 
 -(void)setYw_segmentTintColor:(UIColor *)yw_segmentTintColor{
@@ -543,14 +540,14 @@ static CGFloat Font_Selected_size = 0;
     }
 }
 
-- (void)setSelectedItemAtIndex:(NSInteger)index {
-    for (UIView *view in _segmentTitleView.subviews) {
-        if ([view isKindOfClass:[UIButton class]] && view.tag == index) {
-            UIButton *button = (UIButton *)view;
-            [self didClickButton:button];
-        }
-    }
-}
+//- (void)setSelectedItemAtIndex:(NSInteger)index {
+//    for (UIView *view in _segmentTitleView.subviews) {
+//        if ([view isKindOfClass:[UIButton class]] && view.tag == index) {
+//            UIButton *button = (UIButton *)view;
+//            [self didClickButton:button];
+//        }
+//    }
+//}
 
 -(void)setYw_defaultSelectIndex:(NSInteger)yw_defaultSelectIndex{
     _yw_defaultSelectIndex = yw_defaultSelectIndex;
@@ -587,7 +584,6 @@ static CGFloat Font_Selected_size = 0;
         
         // 设置segmentScrollView的尺寸
         _segmentContentView.contentSize = CGSizeMake(_size.width * self.viewControllersArr.count, 0);
-        // for (int i=0; i<self.viewControllersArr.count; i++) {
         // 默认加载第一个控制器
         UIViewController *viewController = self.viewControllersArr[0];
         viewController.view.frame = CGRectMake(_size.width * 0, 0, _size.width, _size.height-_ScrollView_Y);
