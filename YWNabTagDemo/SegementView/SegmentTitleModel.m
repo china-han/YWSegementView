@@ -7,11 +7,6 @@
 //
 
 #import "SegmentTitleModel.h"
-#import "YYModel.h"
 @implementation SegmentTitleModel
-
-- (NSString *)description {
-    return [self yy_modelDescription];
-}
 
 @end

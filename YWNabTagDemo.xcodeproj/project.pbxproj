@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C4AB21F212146BC00B2FE0F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB21E212146BC00B2FE0F /* NSArray+Log.m */; };
 		5C4AB2252121523A00B2FE0F /* SegmentTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2242121523A00B2FE0F /* SegmentTitleModel.m */; };
-		5C4AB22C2121592000B2FE0F /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2282121592000B2FE0F /* NSObject+YYModel.m */; };
-		5C4AB22D2121592000B2FE0F /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB22A2121592000B2FE0F /* YYClassInfo.m */; };
 		5C4AB244212180FD00B2FE0F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB243212180FD00B2FE0F /* BaseViewController.m */; };
 		5C4AB2472121811000B2FE0F /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2462121811000B2FE0F /* OneViewController.m */; };
 		5C4AB24A2121811600B2FE0F /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB2492121811600B2FE0F /* TwoViewController.m */; };
@@ -32,15 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C4AB21D212146BC00B2FE0F /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		5C4AB21E212146BC00B2FE0F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		5C4AB2232121523A00B2FE0F /* SegmentTitleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentTitleModel.h; sourceTree = "<group>"; };
 		5C4AB2242121523A00B2FE0F /* SegmentTitleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentTitleModel.m; sourceTree = "<group>"; };
-		5C4AB2272121592000B2FE0F /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		5C4AB2282121592000B2FE0F /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
-		5C4AB2292121592000B2FE0F /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
-		5C4AB22A2121592000B2FE0F /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
-		5C4AB22B2121592000B2FE0F /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		5C4AB22F21217D3C00B2FE0F /* Segement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Segement.h; sourceTree = "<group>"; };
 		5C4AB242212180FD00B2FE0F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		5C4AB243212180FD00B2FE0F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -90,27 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C4AB21C212146BC00B2FE0F /* Log */ = {
-			isa = PBXGroup;
-			children = (
-				5C4AB21D212146BC00B2FE0F /* NSArray+Log.h */,
-				5C4AB21E212146BC00B2FE0F /* NSArray+Log.m */,
-			);
-			path = Log;
-			sourceTree = "<group>";
-		};
-		5C4AB2262121592000B2FE0F /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				5C4AB2272121592000B2FE0F /* NSObject+YYModel.h */,
-				5C4AB2282121592000B2FE0F /* NSObject+YYModel.m */,
-				5C4AB2292121592000B2FE0F /* YYClassInfo.h */,
-				5C4AB22A2121592000B2FE0F /* YYClassInfo.m */,
-				5C4AB22B2121592000B2FE0F /* YYModel.h */,
-			);
-			path = YYModel;
-			sourceTree = "<group>";
-		};
 		5C4AB22E21217D0F00B2FE0F /* SegementView */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				5C4AB22E21217D0F00B2FE0F /* SegementView */,
-				5C4AB2262121592000B2FE0F /* YYModel */,
-				5C4AB21C212146BC00B2FE0F /* Log */,
 				5CFCD4D42105D8E1001B39F7 /* AppDelegate.h */,
 				5CFCD4D52105D8E1001B39F7 /* AppDelegate.m */,
 				5CFCD4D72105D8E1001B39F7 /* ViewController.h */,
@@ -252,13 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4AB2532121813300B2FE0F /* FiveViewController.m in Sources */,
-				5C4AB21F212146BC00B2FE0F /* NSArray+Log.m in Sources */,
 				5CA54395210978E200167B46 /* YWSelectViewController.m in Sources */,
 				5C5538C12108445300C890BE /* YWSegmentView.m in Sources */,
 				5C4AB24A2121811600B2FE0F /* TwoViewController.m in Sources */,
 				5CFCD4D92105D8E1001B39F7 /* ViewController.m in Sources */,
 				5C4AB2562121813A00B2FE0F /* SixViewController.m in Sources */,
-				5C4AB22D2121592000B2FE0F /* YYClassInfo.m in Sources */,
 				5C4AB2472121811000B2FE0F /* OneViewController.m in Sources */,
 				5C4AB24D2121811F00B2FE0F /* ThreeViewController.m in Sources */,
 				5C4AB244212180FD00B2FE0F /* BaseViewController.m in Sources */,
@@ -267,7 +232,6 @@
 				5C4AB2502121812500B2FE0F /* FourViewController.m in Sources */,
 				5C5538C52108524200C890BE /* YWDetailsTabController.m in Sources */,
 				5CFCD4D62105D8E1001B39F7 /* AppDelegate.m in Sources */,
-				5C4AB22C2121592000B2FE0F /* NSObject+YYModel.m in Sources */,
 				5C4AB2252121523A00B2FE0F /* SegmentTitleModel.m in Sources */,
 				5CA543982109B40700167B46 /* YWSelectCollectionViewCell.m in Sources */,
 			);
