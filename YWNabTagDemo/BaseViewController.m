@@ -37,6 +37,7 @@
     }];
     segmentView.yw_indicateStyle = segementIndicateStyle;
     segmentView.isShowSelectView = isShowSelectView;
+    segmentView.isShowTitleBottomView = YES;
     [self.view addSubview:segmentView];
 }
 

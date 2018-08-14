@@ -44,6 +44,8 @@ typedef void(^yw_indexBlock)(NSInteger index);
 
 /** 是否使用拖拽选择功能 */
 @property (nonatomic, assign) BOOL isShowSelectView;
+/** 是否显示底部滑竿 */
+@property (nonatomic, assign) BOOL isShowTitleBottomView;
 @property (nonatomic,weak) id<YWSegmentViewDelegate> delegate;
 
 /**

@@ -486,6 +486,13 @@ static CGFloat Font_Selected_size = 0;
 }
 
 #pragma mark - set
+-(void)setIsShowTitleBottomView:(BOOL)isShowTitleBottomView{
+    _isShowSelectView = isShowTitleBottomView;
+    if (self.indicateView) {
+        self.indicateView.hidden = !isShowTitleBottomView;
+    }
+}
+
 -(void)setIsShowSelectView:(BOOL)isShowSelectView{
     _isShowSelectView = isShowSelectView;
     if (isShowSelectView) {
